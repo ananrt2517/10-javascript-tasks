@@ -4,22 +4,25 @@
 
 const ljudi = require("./ljudi.json");
 
-function vratiListuLjudi(fn) {
+function vratiListuLjudi(fn, num) {
   let novaListaLjudi = [];
   for (let user of ljudi) {
     let funkc = fn(user.godiste);
-    if (funkc > 20) {
+    user.age = funkc;
+    if (funkc > num) {
       novaListaLjudi.push(user);
+      
     }
   }
 
   return novaListaLjudi;
 }
 
-const listaStarijihOd20 = vratiListuLjudi(izrGodine);
-const listaStarijihOd40 = vratiListuLjudi(izrGodine, 40);
+const listaStarijihOd40 = vratiListuLjudi(izrGodine, 21);
+console.log(listaStarijihOd40)
 
 
 function izrGodine(godRodjenja) {
   return 2020 - godRodjenja;
 }
+
