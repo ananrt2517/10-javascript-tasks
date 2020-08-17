@@ -1,0 +1,37 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="addNote">Add note</button>
+    <div class="modal-bg">
+      <div class="modal">
+        <h2>Add another note</h2>
+        <label>Title: </label>
+        <input type="text" id="input-title" />
+        <label>Add note: </label>
+        <input type="text" id="input-note" />
+        <button class="submit">Submit</button>
+        <span class="modal-close">X</span>
+      </div>
+    </div>
+    <div class="drawer">
+      <span class="close-drawer">X</span>
+      <div class="inside-drawer">
+        <h2>Edit note:</h2>
+        <label>Edit title: </label>
+        <input type="text" class="edit-title" />
+        <label>Edit note: </label>
+        <input type="text" class="edit-note" />
+        <button class="submit-edit">Submit</button>
+      </div>
+    </div>
+    <div class="lista">
+      <ul class="prikaz"></ul>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>

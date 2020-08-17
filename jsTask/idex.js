@@ -22,14 +22,14 @@
 //     }
 //     newArray.sort(function(a, b){return a-b});
 //     let min = newArray[0];
-//     return min;  
+//     return min;
 // }
 // let funkc = findNumber(array);
 // console.log(funkc)
 
 //zadatak 3
 
-let minString = 'Danas, 15tog Septembra, bice hladnije nego juce u 20h, 16og Septembra';
+let minString ="Danas, 18tog Septembra, bice hladnije nego juce u 20h, 16og Septembra";
 
 // function minIntegerFromString(str){
 //     let regex = /\d+/g;
@@ -38,24 +38,53 @@ let minString = 'Danas, 15tog Septembra, bice hladnije nego juce u 20h, 16og Sep
 //     let min =parseInt(sort)
 //     console.log(min);
 //     return min
-    
 
 // }
 // let minimum = minIntegerFromString(minString)
 // console.log(minimum)
 
-function minIntegerFromString(str){
-    let newArray = [];
-    let splitStr = str.split("");    
-    for(let i = 0; i < splitStr.length ; i ++){
-        let parse = parseInt(splitStr[i]);
-        if(Number.isInteger(parse)){
-            newArray.push(parse);
-        }
+
+//drugi nacin
+function minIntegerFromString(str) {
+  let newArray = [];
+  let secondNewArray = [];
+  let splitStr = str.split("");
+  for (let i = 0; i < splitStr.length; i++) {
+    let parse = parseInt(splitStr[i]);
+    if (Number.isInteger(parse)) {
+      newArray.push(parse.toString());
+
+      let newItem = newArray[i] + newArray[i+1];
+      secondNewArray.push(newItem);
+      console.log(newItem);
+        newArray[i] += newArray[i+1];
+        console.log(newArray[i])
     }
-    newArray.sort(function(a, b){return a-b});
-    let min = newArray[0];
-    return min; 
+  }
+  newArray.sort(function (a, b) {
+    return a - b;
+  });
+  let min = newArray[0];
+  return min;
 }
-let minimum = minIntegerFromString(minString)
-console.log(minimum)
+let minimum = minIntegerFromString(minString);
+// console.log(minimum)
+
+
+
+//4zadatak
+
+// let array = ['abc', 'ac', 'bdca', 'edagas'];
+
+// function  concatStringsByLength(arr, type){
+//     let joined = '';
+//     if(type === 0){
+//        joined = arr.join('');
+//     }else {
+//         joined = arr.reverse().join('');
+//     }
+//     return joined;
+// }
+
+// let concat = concatStringsByLength(array, 1);
+// console.log(concat)
