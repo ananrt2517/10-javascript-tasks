@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="calculator">
+      <div class="inputPart">
+        <div class="inputNumber"><span class="result">0</span></div>
+      </div>
+      <div class="numberOperation">
+        <div class="row">
+          <button class="allClear" onclick="pushBtn(this);">AC</button>
+          <button onclick="pushBtn(this);">/</button>
+        </div>
+        <div class="row">
+          <button onclick="pushBtn(this);">7</button>
+          <button onclick="pushBtn(this);">8</button>
+          <button onclick="pushBtn(this);">9</button>
+          <button onclick="pushBtn(this);">*</button>
+        </div>
+        <div class="row">
+          <button onclick="pushBtn(this);">4</button>
+          <button onclick="pushBtn(this);">5</button>
+          <button onclick="pushBtn(this);">6</button>
+          <button onclick="pushBtn(this);">-</button>
+        </div>
+        <div class="row">
+          <button onclick="pushBtn(this);">1</button>
+          <button onclick="pushBtn(this);">2</button>
+          <button onclick="pushBtn(this);">3</button>
+          <button onclick="pushBtn(this);">+</button>
+        </div>
+        <div class="row">
+          <button class="diferentBtn" onclick="pushBtn(this);">0</button>
+          <button class="diferentBtn" onclick="pushBtn(this);">.</button>
+          <button class="diferentBtn" onclick="pushBtn(this);">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
