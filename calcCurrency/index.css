@@ -1,0 +1,34 @@
+.calculate {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-select {
+  display: flex;
+  margin-bottom: 20px;
+}
+#submit {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(30, 153, 253);
+    color: white;
+    box-shadow: 0px 0px 14px 0px rgba(107,102,107,1);
+}
+#inputRSD{
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.result{
+    background-color: lightgray;
+    border-radius: 5px;
+    width: 21.5%;
+    height: 5%;
+}
