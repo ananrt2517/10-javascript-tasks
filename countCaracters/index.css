@@ -1,0 +1,30 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+input{
+    padding: 15px;
+    border-radius: 27px;
+    border: 1px solid black;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+.input-text{
+    margin-bottom: 20px;
+    display: flex;
+}
+.input-text p{
+    margin-right: 10px;
+}
